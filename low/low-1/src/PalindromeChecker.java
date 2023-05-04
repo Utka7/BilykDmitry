@@ -1,9 +1,9 @@
 public class PalindromeChecker {
     public boolean isPalindrome(String str){
-        String cleanStr = str.replace(" ","").toLowerCase();
+        StringBuilder reversedTextBuilder = new StringBuilder(str.toLowerCase()).reverse();
 
-        for (int i = 0; i < str.length() / 2; i++){
-            if(cleanStr.charAt(i) != cleanStr.charAt(cleanStr.length() - i - 1)){
+        for (int i = 0; i < str.length() / 2; i++) {
+            if (str.toLowerCase().charAt(i) != reversedTextBuilder.charAt(i)) {
                 return false;
             }
         }
