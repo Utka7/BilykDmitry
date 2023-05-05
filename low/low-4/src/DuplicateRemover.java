@@ -17,6 +17,12 @@ public class DuplicateRemover {
                 resultArray[index++] = array[i];
             }
         }
-        return Arrays.copyOf(resultArray, index);
+
+        int[] trimmedArray = new int[index];
+        for (int i = 0; i < index; i++) {
+            trimmedArray[i] = resultArray[i];
+        }
+
+        return trimmedArray;
     }
 }
