@@ -8,7 +8,7 @@ public class Searcher {
             if(key == array[middle]){
                 return middle;
             }
-            else if(key < array[middle]){
+            if(key < array[middle]){
                 end = middle - 1;
             }
             else{
