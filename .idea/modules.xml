@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/low/low.iml" filepath="$PROJECT_DIR$/low/low.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low-1/low-1.iml" filepath="$PROJECT_DIR$/low/low-1/low-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low-2/low-2.iml" filepath="$PROJECT_DIR$/low/low-2/low-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/low/low-4/low-4.iml" filepath="$PROJECT_DIR$/low/low-4/low-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle.iml" filepath="$PROJECT_DIR$/middle/middle.iml" />
     </modules>
   </component>
