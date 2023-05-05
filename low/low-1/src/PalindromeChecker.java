@@ -1,5 +1,8 @@
 public class PalindromeChecker {
     public boolean isPalindrome(String str) {
-        return str.toLowerCase().equals(new StringBuilder(str.toLowerCase()).reverse().toString());
+        String lowerCaseStr = str.toLowerCase();
+        String reversedStr = new StringBuilder(lowerCaseStr).reverse().toString();
+        var isPalindrome = lowerCaseStr.equals(reversedStr);
+        return isPalindrome;
     }
 }
