@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        long number = scanner.nextInt();
-        PalindromeChecker palindromeChecker  = new PalindromeChecker();
-        boolean isPalindrome = palindromeChecker.isPalindrome(number);
+        var scanner = new Scanner(System.in);
+        var number = scanner.nextInt();
+        var palindromeChecker  = new PalindromeChecker();
+        var isPalindrome = palindromeChecker.isPalindrome(number);
         System.out.println(isPalindrome);
     }
 }
