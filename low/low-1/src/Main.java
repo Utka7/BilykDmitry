@@ -5,6 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String text = scanner.nextLine();
         PalindromeChecker palindromeChecker  = new PalindromeChecker();
-        System.out.println(palindromeChecker.isPalindrome(text));
+        boolean isPalindrome = palindromeChecker.isPalindrome(text);
+        System.out.println(isPalindrome);
     }
 }
