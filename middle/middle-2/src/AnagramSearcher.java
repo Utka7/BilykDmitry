@@ -7,8 +7,8 @@ public class AnagramSearcher {
         int[] countLetterArray = new int[alphabetSize];
 
         for (int i = 0; i < firstString.length(); i++){
-            char c1 = firstString.charAt(i);
-            char c2 = secondString.charAt(i);
+            var c1 = firstString.charAt(i);
+            var c2 = secondString.charAt(i);
             countLetterArray[c1 - 'a']++;
             countLetterArray[c2 - 'a']--;
         }
