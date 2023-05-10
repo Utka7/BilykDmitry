@@ -1,10 +1,12 @@
 public class AnagramSearcher {
+    final static var ALPHABET_SIZE = 26;
+
     public boolean isAnagram(String firstString, String secondString){
         if (firstString.length() != secondString.length()){
             return false;
         }
-        var alphabetSize = 26;
-        int[] countLetterArray = new int[alphabetSize];
+
+        var countLetterArray = new int[ALPHABET_SIZE];
 
         for (int i = 0; i < firstString.length(); i++){
             var c1 = firstString.charAt(i);
@@ -13,7 +15,7 @@ public class AnagramSearcher {
             countLetterArray[c2 - 'a']--;
         }
 
-        for (int i = 0; i < alphabetSize; i++){
+        for (int i = 0; i < ALPHABET_SIZE; i++){
             if (countLetterArray[i] != 0){
                 return false;
             }
