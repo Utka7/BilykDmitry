@@ -3,8 +3,8 @@ public class TreeTraversaler<T> {
         if (root == null) {
             return;
         }
-        System.out.print(root.val + " ");
-        for (var child : root.children){
+        System.out.print(root.getVal() + " ");
+        for (var child : root.getChildren()){
             preorderTraversal(child);
         }
     }

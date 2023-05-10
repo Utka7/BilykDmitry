@@ -6,14 +6,14 @@ public class Main {
     }
 
     public static Node<Integer> buildTree() {
-        Node<Integer> root = new Node<>(1);
+        var root = new Node<Integer>(1);
         root.addChild(new Node<>(2));
         root.addChild(new Node<>(3));
         root.addChild(new Node<>(4));
-        root.children.get(0).addChild(new Node<>(5));
-        root.children.get(0).addChild(new Node<>(6));
-        root.children.get(1).addChild(new Node<>(7));
-        root.children.get(1).addChild(new Node<>(8));
+        root.getChildren().get(0).addChild(new Node<>(5));
+        root.getChildren().get(0).addChild(new Node<>(6));
+        root.getChildren().get(1).addChild(new Node<>(7));
+        root.getChildren().get(1).addChild(new Node<>(8));
         return root;
     }
 }
