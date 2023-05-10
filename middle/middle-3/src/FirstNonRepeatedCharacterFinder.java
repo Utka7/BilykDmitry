@@ -4,12 +4,12 @@ public class FirstNonRepeatedCharacterFinder {
     public char find(String string) {
         var countCharArray = new int[ALPHABET_SIZE];
 
-        for (int i = 0; i < string.length(); i++) {
+        for (var i = 0; i < string.length(); i++) {
             var ch = string.charAt(i);
             countCharArray[ch - 'a']++;
         }
 
-        for (int i = 0; i < string.length(); i++) {
+        for (var i = 0; i < string.length(); i++) {
             var ch = string.charAt(i);
             if (countCharArray[ch - 'a'] == 1) {
                 return ch;
