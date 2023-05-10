@@ -1,35 +1,22 @@
-import java.util.HashMap;
-
 public class FirstNonRepeatedCharacterFinder {
-    public char find(String string){
-        var charCountMap = new HashMap<Character, Integer>();
+    final static int ALPHABET_SIZE = 26;
 
-        for (char ch : string.toCharArray()){
-            charCountMap.put(ch, charCountMap.getOrDefault(ch,0 ) + 1);
+    public char find(String string) {
+        int[] countCharArray = new int[ALPHABET_SIZE];
+
+        for (int i = 0; i < string.length(); i++) {
+            char ch = string.charAt(i);
+            countCharArray[ch - 'a']++;
         }
 
-        for (char ch : string.toCharArray()) {
-            if (charCountMap.get(ch) == 1) {
+        for (int i = 0; i < string.length(); i++) {
+            char ch = string.charAt(i);
+            if (countCharArray[ch - 'a'] == 1) {
                 return ch;
             }
         }
 
-        throw new RuntimeException("a non-repeatable character was not found in the string");
+        throw new RuntimeException("No non-repeated character found in the string");
     }
 
-    public int find(int[] array){
-        var numberCountMap = new HashMap<Integer, Integer>();
-
-        for (int number : array){
-            numberCountMap.put(number, numberCountMap.getOrDefault(number, 0) + 1);
-        }
-
-        for (int number : array){
-            if (numberCountMap.get(number) == 1){
-                return number;
-            }
-        }
-
-        throw new RuntimeException("a non-repeatable character was not found in the array");
-    }
 }
