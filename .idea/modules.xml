@@ -9,9 +9,11 @@
       <module fileurl="file://$PROJECT_DIR$/low/low-2/low-2.iml" filepath="$PROJECT_DIR$/low/low-2/low-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low-3/low-3.iml" filepath="$PROJECT_DIR$/low/low-3/low-3.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low-4/low-4.iml" filepath="$PROJECT_DIR$/low/low-4/low-4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/low/low-5/low-5.iml" filepath="$PROJECT_DIR$/low/low-5/low-5.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle.iml" filepath="$PROJECT_DIR$/middle/middle.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle-1/middle-1.iml" filepath="$PROJECT_DIR$/middle/middle-1/middle-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle-3/middle-3.iml" filepath="$PROJECT_DIR$/middle/middle-3/middle-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/middle/middle-2/middle-2.iml" filepath="$PROJECT_DIR$/middle/middle-2/middle-2.iml" />
     </modules>
   </component>
 </project>
