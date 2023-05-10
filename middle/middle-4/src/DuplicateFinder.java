@@ -6,7 +6,7 @@ public class DuplicateFinder<T> {
     public Map<T, Integer> findDuplicate(List<T> list){
         var countMap = new HashMap<T,Integer>();
 
-        for (T element : list){
+        for (var element : list){
             countMap.merge(element,1,Integer::sum);
         }
 
