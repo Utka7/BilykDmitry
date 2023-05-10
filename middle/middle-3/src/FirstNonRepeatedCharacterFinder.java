@@ -2,15 +2,15 @@ public class FirstNonRepeatedCharacterFinder {
     final static int ALPHABET_SIZE = 26;
 
     public char find(String string) {
-        int[] countCharArray = new int[ALPHABET_SIZE];
+        var countCharArray = new int[ALPHABET_SIZE];
 
         for (int i = 0; i < string.length(); i++) {
-            char ch = string.charAt(i);
+            var ch = string.charAt(i);
             countCharArray[ch - 'a']++;
         }
 
         for (int i = 0; i < string.length(); i++) {
-            char ch = string.charAt(i);
+            var ch = string.charAt(i);
             if (countCharArray[ch - 'a'] == 1) {
                 return ch;
             }
