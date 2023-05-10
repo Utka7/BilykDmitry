@@ -1,15 +1,19 @@
 public class Main {
     public static void main(String[] args) {
+        var root = buildTree();
+        var treeTraversaler = new TreeTraversaler<Integer>();
+        treeTraversaler.preorderTraversal(root);
+    }
 
-        var root = new Node(1);
-        root.left = new Node(2);
-        root.right = new Node(3);
-        root.left.left = new Node(4);
-        root.left.right = new Node(5);
-        root.right.left = new Node(6);
-        root.right.right = new Node(7);
-
-        var tree = new TreeTraversaler();
-        tree.preorderTraversal(root);
+    public static Node<Integer> buildTree() {
+        Node<Integer> root = new Node<>(1);
+        root.addChild(new Node<>(2));
+        root.addChild(new Node<>(3));
+        root.addChild(new Node<>(4));
+        root.children.get(0).addChild(new Node<>(5));
+        root.children.get(0).addChild(new Node<>(6));
+        root.children.get(1).addChild(new Node<>(7));
+        root.children.get(1).addChild(new Node<>(8));
+        return root;
     }
 }

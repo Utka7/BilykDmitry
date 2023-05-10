@@ -1,10 +1,11 @@
-public class TreeTraversaler {
-    public void preorderTraversal(Node root) {
+public class TreeTraversaler<T> {
+    public void preorderTraversal(Node<T> root) {
         if (root == null) {
             return;
         }
         System.out.print(root.val + " ");
-        preorderTraversal(root.left);
-        preorderTraversal(root.right);
+        for (var child : root.children){
+            preorderTraversal(child);
+        }
     }
 }

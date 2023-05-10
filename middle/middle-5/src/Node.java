@@ -1,11 +1,16 @@
-public class Node {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Node<T> {
     int val;
-    Node left;
-    Node right;
+    List<Node<T>> children;
 
     public Node(int val) {
         this.val = val;
-        this.left = null;
-        this.right = null;
+        this.children = new ArrayList<>();
+    }
+
+    public void addChild(Node<T> child){
+        this.children.add(child);
     }
 }
