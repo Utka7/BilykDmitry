@@ -1,15 +1,10 @@
 public class ArrayReverser {
     public void reverse(int[] array){
-        var start = 0;
-        var end = array.length - 1;
 
-        while (start <= end){
-            var temp = array[start];
-            array[start] = array[end];
-            array[end] = temp;
-
-            start++;
-            end--;
+        for (int i = 0, j = array.length-1; i < array.length / 2; i++, j--){
+            array[i] ^= array[j];
+            array[j] ^= array[i];
+            array[i] ^= array[j];
         }
     }
 }
