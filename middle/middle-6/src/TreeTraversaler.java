@@ -3,7 +3,7 @@ public class TreeTraversaler<T> {
         if (root == null) {
             return;
         }
-        for (var child : root.getChildren()){
+        for (var child : root.getChildren()) {
             postrderTraversal(child);
         }
         System.out.print(root.getValue() + " ");
