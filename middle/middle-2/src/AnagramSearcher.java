@@ -1,5 +1,5 @@
 public class AnagramSearcher {
-    final static var ALPHABET_SIZE = 26;
+    final static int ALPHABET_SIZE = 26;
 
     public boolean isAnagram(String firstString, String secondString){
         if (firstString.length() != secondString.length()){
