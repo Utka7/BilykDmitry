@@ -5,9 +5,9 @@ class AnagramSearcherTest {
     @org.junit.jupiter.api.Test
     void isAnagram() {
         AnagramSearcher searcher = new AnagramSearcher();
-        String firstString = "race";
-        String secondString = "care";
-        boolean result = searcher.isAnagram(firstString, secondString);
+        var firstString = "race";
+        var secondString = "care";
+        var result = searcher.isAnagram(firstString, secondString);
         assertTrue(result);
 
         firstString = "car";
