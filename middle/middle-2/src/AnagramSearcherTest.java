@@ -4,7 +4,7 @@ class AnagramSearcherTest {
 
     @org.junit.jupiter.api.Test
     void isAnagram() {
-        AnagramSearcher searcher = new AnagramSearcher();
+        var searcher = new AnagramSearcher();
         var firstString = "race";
         var secondString = "care";
         var result = searcher.isAnagram(firstString, secondString);
