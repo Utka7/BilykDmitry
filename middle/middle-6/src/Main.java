@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         var root = buildTree();
         var treeTraversaler = new TreeTraversaler<Integer>();
-        treeTraversaler.preorderTraversal(root);
+        treeTraversaler.postrderTraversal(root);
     }
 
     public static Node<Integer> buildTree() {
