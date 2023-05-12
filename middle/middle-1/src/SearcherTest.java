@@ -1,9 +1,10 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 class SearcherTest {
 
-    @org.junit.jupiter.api.Test
-    void binarySearch() {
+    @Test
+    void binarySearch_ValidKeys_ReturnsCorrectIndex() {
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
         var key1 = 1;
         var key2 = 12;
