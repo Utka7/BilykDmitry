@@ -9,7 +9,7 @@ class TreeTraversalerTest {
 
     @Test
     void postrderTraversal_ValidTree_ValidOutput() {
-        var root = TreeTraversalerTest.buildTree();
+        var root = buildTree();
         var byteArrayOutputStream = new ByteArrayOutputStream();
         var printStream = new PrintStream(byteArrayOutputStream);
         System.setOut(printStream);
@@ -19,7 +19,7 @@ class TreeTraversalerTest {
         assertEquals("5 6 2 7 8 3 4 1 ", result);
     }
 
-    public static Node<Integer> buildTree() {
+    public Node<Integer> buildTree() {
         var root = new Node<Integer>(1);
         root.addChild(new Node<>(2));
         root.addChild(new Node<>(3));
