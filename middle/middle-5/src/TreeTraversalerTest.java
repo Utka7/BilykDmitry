@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class TreeTraversalerTest {
 
     @Test
-    void preorderTraversal_ValidTree_ReturnTraverseInOrder() {
+    void preorderTraversal_ValidTree_ValidOutput() {
         var root = buildTree();
         var byteArrayOutputStream = new ByteArrayOutputStream();
         var printStream = new PrintStream(byteArrayOutputStream);

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class TreeTraversalerTest {
 
     @Test
-    void postrderTraversal() {
+    void postrderTraversal_ValidTree_ValidOutput() {
         var root = TreeTraversalerTest.buildTree();
         var byteArrayOutputStream = new ByteArrayOutputStream();
         var printStream = new PrintStream(byteArrayOutputStream);
