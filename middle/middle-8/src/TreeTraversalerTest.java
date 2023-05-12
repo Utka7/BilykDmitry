@@ -2,13 +2,14 @@ import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TreeTraversalerTest {
 
     @Test
-    void breadthTraversal() {
-        var root = TreeTraversalerTest.buildTree();
+    void breadthTraversal_ValidTree_ValidOutput() {
+        var root = buildTree();
         var byteArrayOutputStream = new ByteArrayOutputStream();
         var printStream = new PrintStream(byteArrayOutputStream);
         System.setOut(printStream);
@@ -18,7 +19,7 @@ class TreeTraversalerTest {
         assertEquals("1 2 3 4 5 6 7 8 ", result);
     }
 
-    public static Node buildTree() {
+    public Node buildTree() {
         var root = new Node(1);
         root.setLeft(new Node(2));
         root.setRight(new Node(3));
