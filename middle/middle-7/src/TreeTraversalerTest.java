@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class TreeTraversalerTest {
 
     @Test
-    void inorderTraversal() {
-        var root = TreeTraversalerTest.buildTree();
+    void inorderTraversal_ValidTree_ValidOutput() {
+        var root = buildTree();
         var byteArrayOutputStream = new ByteArrayOutputStream();
         var printStream = new PrintStream(byteArrayOutputStream);
         System.setOut(printStream);
@@ -17,7 +17,7 @@ class TreeTraversalerTest {
         assertEquals("4 2 5 1 6 3 8 7 ", result);
     }
 
-    public static Node buildTree() {
+    public Node buildTree() {
         var root = new Node(1);
         root.setLeft(new Node(2));
         root.setRight(new Node(3));
