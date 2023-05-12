@@ -4,7 +4,7 @@ class SearcherTest {
 
     @org.junit.jupiter.api.Test
     void binarySearch() {
-        int[] array = {1,2,3,4,5,6,7,8,9,10,11,12};
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
         var key1 = 1;
         var key2 = 12;
         var key3 = 8;
