@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DuplicateFinderTest {
 
@@ -18,22 +18,23 @@ class DuplicateFinderTest {
         var resultInteger = duplicateFinderInteger.findDuplicate(listInteger);
         assertEquals(expectedResultInteger, resultInteger);
     }
+
     @Test
-    void findDuplicate_ListString_ReturnExpectedResult(){
+    void findDuplicate_ListString_ReturnExpectedResult() {
         var duplicateFinderString = new DuplicateFinder<String>();
         var listString = Arrays.asList("test", "sqrt", "null", "test", "int");
-        var expectedResultString = new HashMap<String,Integer>();
-        expectedResultString.put("test",2);
+        var expectedResultString = new HashMap<String, Integer>();
+        expectedResultString.put("test", 2);
         var resultString = duplicateFinderString.findDuplicate(listString);
-        assertEquals(expectedResultString,resultString);
+        assertEquals(expectedResultString, resultString);
     }
 
     @Test
-    void findDuplicate_ListWithoutDuplicates_ReturnExpectedResult(){
+    void findDuplicate_ListWithoutDuplicates_ReturnExpectedResult() {
         var duplicateFinderChar = new DuplicateFinder<Character>();
-        var listChar = Arrays.asList('q','w','e','r');
-        var expectedResultChar = new HashMap<Character,Integer>();
+        var listChar = Arrays.asList('q', 'w', 'e', 'r');
+        var expectedResultChar = new HashMap<Character, Integer>();
         var resultChar = duplicateFinderChar.findDuplicate(listChar);
-        assertEquals(expectedResultChar,resultChar);
+        assertEquals(expectedResultChar, resultChar);
     }
 }
