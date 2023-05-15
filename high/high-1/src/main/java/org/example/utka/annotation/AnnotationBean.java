@@ -1,6 +1,5 @@
 package org.example.utka.annotation;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component("annotationBean")
