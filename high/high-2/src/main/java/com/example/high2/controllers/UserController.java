@@ -1,6 +1,6 @@
 package com.example.high2.controllers;
 
-import com.example.high2.User;
+import com.example.high2.model.User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;

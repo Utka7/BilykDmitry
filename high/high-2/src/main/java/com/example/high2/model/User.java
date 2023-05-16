@@ -1,4 +1,4 @@
-package com.example.high2;
+package com.example.high2.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
