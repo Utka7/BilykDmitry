@@ -10,6 +10,6 @@ import org.springframework.stereotype.Component;
 public class AppConfig {
     @Bean
     public JavaBean javaBean() {
-        return new JavaBean();
+        return new JavaBean("JavaBean");
     }
 }
