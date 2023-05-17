@@ -24,7 +24,8 @@ public class UserService {
         return userDao.createUser(user);
     }
 
-    public UserDto updateUser(Long id, UserDto user) {
+    public UserDto updateUser(UserDto user) {
+        long id = user.getId();
         return userDao.updateUser(id, user);
     }
 

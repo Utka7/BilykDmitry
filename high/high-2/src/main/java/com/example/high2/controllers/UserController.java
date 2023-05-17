@@ -29,8 +29,7 @@ public class UserController {
 
     @PutMapping
     public UserDto updateUser(@RequestBody UserDto user) {
-        long id = user.getId();
-        return userService.updateUser(id, user);
+        return userService.updateUser(user);
     }
 
     @DeleteMapping("/{id}")
