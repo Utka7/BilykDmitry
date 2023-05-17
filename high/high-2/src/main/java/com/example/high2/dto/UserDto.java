@@ -1,4 +1,4 @@
-package com.example.high2.model;
+package com.example.high2.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class UserDto {
     private long id;
     private String name;
     private int age;

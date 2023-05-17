@@ -1,41 +1,39 @@
 package com.example.high2.controllers;
 
-import com.example.high2.model.User;
+import com.example.high2.dto.UserDto;
+import com.example.high2.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
-    private List<User> users = new ArrayList<User>();
+    private final UserService userService;
+
+    @Autowired
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
     @GetMapping
-    public List<User> getAllusers(){
-        return users;
+    public List<UserDto> getAllusers(){
+        return userService.getAllUsers();
     }
 
     @PostMapping
-    public User createUser(@RequestBody User user){
-        users.add(user);
-        return user;
+    public UserDto createUser(@RequestBody UserDto user){
+        return userService.createUser(user);
     }
 
     @PutMapping("/{id}")
-    public User updateUser(@PathVariable long id, @RequestBody User user){
-        for (var currentUser : users){
-            if(currentUser.getId() == id){
-                currentUser.setName(user.getName());
-                currentUser.setAge(user.getAge());
-                return currentUser;
-            }
-        }
-        throw new IllegalArgumentException("User not found with id: " + id);
+    public UserDto updateUser(@PathVariable long id, @RequestBody UserDto user){
+        return userService.updateUser(id ,user);
     }
 
     @DeleteMapping("/{id}")
     public void deleteUser(@PathVariable Long id) {
-        users.removeIf(user -> user.getId() == id);
+        userService.deleteUser(id);
     }
 }
