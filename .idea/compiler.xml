@@ -16,6 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="high-1" options="-parameters" />
       <module name="high-2" options="-parameters" />
+      <module name="high-3" options="-parameters" />
     </option>
   </component>
 </project>

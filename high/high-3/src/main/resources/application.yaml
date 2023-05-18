@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: "prod"
+
+myapp:
+  name: Utka
+  value: 789
+  message: Hello
+
+---
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+myapp:
+  name: Jack
+  value: 789
+  message: Hello
+
+---
+spring:
+  config:
+    activate:
+      on-profile: "dev"
+myapp:
+  name: Utka
+  value: 1112
+  message: Hello
