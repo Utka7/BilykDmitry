@@ -1,14 +1,14 @@
-package org.example.utka.java;
+package com.example.utka.xml;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-public class JavaBean {
+public class XmlBean {
     private String name;
 }

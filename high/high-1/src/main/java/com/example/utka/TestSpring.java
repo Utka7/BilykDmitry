@@ -1,9 +1,9 @@
-package org.example.utka;
+package com.example.utka;
 
-import org.example.utka.annotation.AnnotationBean;
-import org.example.utka.java.AppConfig;
-import org.example.utka.java.JavaBean;
-import org.example.utka.xml.XmlBean;
+import com.example.utka.annotation.AnnotationBean;
+import com.example.utka.java.AppConfig;
+import com.example.utka.java.JavaBean;
+import com.example.utka.xml.XmlBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
