@@ -1,4 +1,4 @@
-package org.example.utka.annotation;
+package com.example.utka.annotation;
 
 import lombok.*;
 import org.springframework.stereotype.Component;

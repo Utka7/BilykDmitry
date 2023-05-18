@@ -1,0 +1,43 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="high-1:war exploded">
+    <output-path>$PROJECT_DIR$/high/high-1/target/high-1</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>high-1</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="high-1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:6.0.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:6.0.7" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:6.0.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:6.0.9" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:6.0.7" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:6.0.7" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:3.0.6" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:3.0.5" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:3.0.5" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:3.0.5" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.4.6" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.4.6" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.7" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.19.0" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.19.0" />
+          <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:2.0.7" />
+          <element id="library" level="project" name="Maven: jakarta.annotation:jakarta.annotation-api:2.1.1" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.33" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/high/high-1/target/high-1/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="high-1/web/Web" />
+    </root>
+  </artifact>
+</component>
