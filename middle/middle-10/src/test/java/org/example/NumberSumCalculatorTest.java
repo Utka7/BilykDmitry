@@ -11,7 +11,7 @@ class NumberSumCalculatorTest {
 
     @Test
     void positiveSum_UsualList_ExpectedResult() {
-        List<Integer> list = Arrays.asList(1, 2, 3, -3, 4, 5, 6);
+        var list = Arrays.asList(1, 2, 3, -3, 4, 5, 6);
         var expectedSum = 21;
 
         var actualSum = NumberSumCalculator.calculatePositiveSum(list);
@@ -20,7 +20,7 @@ class NumberSumCalculatorTest {
 
     @Test
     void negativeSum_UsualList_ExpectedResult() {
-        List<Integer> list = Arrays.asList(-1, -2, 3, -3, 4, -5, 6);
+        var list = Arrays.asList(-1, -2, 3, -3, 4, -5, 6);
         var expectedSum = -11;
 
         var actualSum = NumberSumCalculator.calculateNegativeSum(list);
