@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="high-3" />
         <module name="middle-11" />
+        <module name="middle-10" />
         <module name="high-1" />
         <module name="high-2" />
       </profile>
