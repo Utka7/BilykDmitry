@@ -9,18 +9,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PersonDAO {
-    private static final ConfigurationDB configurationDB;
+    private final ConfigurationDB configurationDB;
 
-    static {
-        configurationDB = new ConfigurationDB();
+    public PersonDAO(String config_File){
+        configurationDB = new ConfigurationDB(config_File);
     }
 
     public List<Person> getAllPersons() throws SQLException {
         var persons = new ArrayList<Person>();
 
-        try(Connection connection = DriverManager.getConnection(configurationDB.getURL(),
-                configurationDB.getUSERNAME(),
-                configurationDB.getPASSWORD())){
+        try(Connection connection = DriverManager.getConnection(configurationDB.getUrl(),
+                configurationDB.getUsername(),
+                configurationDB.getPassword())){
             var query = "SELECT * From person";
 
             try (Statement statement = connection.createStatement();

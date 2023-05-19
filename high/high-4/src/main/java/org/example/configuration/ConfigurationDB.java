@@ -9,21 +9,20 @@ import java.util.Properties;
 
 @Getter
 public class ConfigurationDB {
-    private final String URL;
-    private final String USERNAME;
-    private final String PASSWORD;
-    private final String CONFIG_FILE = "application.properties";
+    private final String url;
+    private final String username;
+    private final String password;
 
-    public ConfigurationDB() {
-        Properties properties = loadProperties();
-        this.URL = properties.getProperty("db.url");
-        this.USERNAME = properties.getProperty("db.username");
-        this.PASSWORD = properties.getProperty("db.password");
+    public ConfigurationDB(String configFile) {
+        Properties properties = loadProperties(configFile);
+        this.url = properties.getProperty("db.url");
+        this.username = properties.getProperty("db.username");
+        this.password = properties.getProperty("db.password");
     }
 
-    private Properties loadProperties() {
+    private Properties loadProperties(String configFile) {
         Properties properties = new Properties();
-        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(CONFIG_FILE)) {
+        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(configFile)) {
             properties.load(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
