@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/high/high-5/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -8,11 +11,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="high-3" />
         <module name="middle-11" />
+        <module name="high-5" />
         <module name="middle-10" />
         <module name="high-1" />
         <module name="high-2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="high-4" target="19" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

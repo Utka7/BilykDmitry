@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TN.iml" filepath="$PROJECT_DIR$/TN.iml" />
       <module fileurl="file://$PROJECT_DIR$/high/high.iml" filepath="$PROJECT_DIR$/high/high.iml" />
+      <module fileurl="file://$PROJECT_DIR$/high-4.iml" filepath="$PROJECT_DIR$/high-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low.iml" filepath="$PROJECT_DIR$/low/low.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low-1/low-1.iml" filepath="$PROJECT_DIR$/low/low-1/low-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low-2/low-2.iml" filepath="$PROJECT_DIR$/low/low-2/low-2.iml" />
@@ -12,7 +13,6 @@
       <module fileurl="file://$PROJECT_DIR$/low/low-5/low-5.iml" filepath="$PROJECT_DIR$/low/low-5/low-5.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle.iml" filepath="$PROJECT_DIR$/middle/middle.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle-1/middle-1.iml" filepath="$PROJECT_DIR$/middle/middle-1/middle-1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/middle-10.iml" filepath="$PROJECT_DIR$/middle-10.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle-3/middle-3.iml" filepath="$PROJECT_DIR$/middle/middle-3/middle-3.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle-4/middle-4.iml" filepath="$PROJECT_DIR$/middle/middle-4/middle-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle-5/middle-5.iml" filepath="$PROJECT_DIR$/middle/middle-5/middle-5.iml" />
