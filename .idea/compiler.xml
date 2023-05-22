@@ -10,6 +10,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="high-3" />
+        <module name="high-4" />
         <module name="middle-11" />
         <module name="high-5" />
         <module name="middle-10" />
@@ -26,6 +27,7 @@
       <module name="high-1" options="-parameters" />
       <module name="high-2" options="-parameters" />
       <module name="high-3" options="-parameters" />
+      <module name="high-4" options="" />
     </option>
   </component>
 </project>
