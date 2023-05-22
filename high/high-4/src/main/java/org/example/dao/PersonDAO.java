@@ -1,8 +1,7 @@
 package org.example.dao;
 
-import lombok.AllArgsConstructor;
 import org.example.configuration.ConfigurationDB;
-import org.example.models.Person;
+import org.example.DTO.PersonDTO;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -11,12 +10,15 @@ import java.util.List;
 public class PersonDAO {
     private final ConfigurationDB configurationDB;
 
-    public PersonDAO(String config_File){
+    public PersonDAO(String config_File) {
+        if (config_File == null) {
+            throw new IllegalArgumentException("Configuration file cannot be null");
+        }
         configurationDB = new ConfigurationDB(config_File);
     }
 
-    public List<Person> getAllPersons() throws SQLException {
-        var persons = new ArrayList<Person>();
+    public List<PersonDTO> getAllPersons() throws SQLException {
+        var persons = new ArrayList<PersonDTO>();
 
         try(Connection connection = DriverManager.getConnection(configurationDB.getUrl(),
                 configurationDB.getUsername(),
@@ -29,7 +31,7 @@ public class PersonDAO {
                 while (resultSet.next()){
                     var id = resultSet.getInt("id");
                     var fullName = resultSet.getString("full_name");
-                    var person = new Person(id, fullName);
+                    var person = new PersonDTO(id, fullName);
                     persons.add(person);
                 }
             }
