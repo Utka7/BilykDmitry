@@ -18,7 +18,7 @@ public class Main {
         }
 
         var bankDAO = new BankDAO(configFile);
-        BankService bankService = new BankService(bankDAO);
+        var bankService = new BankService(bankDAO);
         var name = "Aльфа Банк";
         bankService.updateBankNames(name);
 

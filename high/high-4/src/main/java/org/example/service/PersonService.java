@@ -1,6 +1,6 @@
 package org.example.service;
 
-import org.example.DTO.PersonDTO;
+import org.example.dto.PersonDTO;
 import org.example.dao.PersonDAO;
 
 import java.sql.SQLException;

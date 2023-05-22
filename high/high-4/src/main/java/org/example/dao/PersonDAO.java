@@ -1,7 +1,7 @@
 package org.example.dao;
 
 import org.example.configuration.ConfigurationDB;
-import org.example.DTO.PersonDTO;
+import org.example.dto.PersonDTO;
 
 import java.sql.*;
 import java.util.ArrayList;

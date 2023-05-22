@@ -1,4 +1,4 @@
-package org.example.DTO;
+package org.example.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class PersonDTO {
+public class BankDTO {
     private int id;
-    private String fullName;
+    private String name;
 }

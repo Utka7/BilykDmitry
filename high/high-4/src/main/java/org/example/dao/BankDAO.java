@@ -30,7 +30,11 @@ public class BankDAO {
                 statement.executeUpdate(query);
                 connection.commit();
             }
-
+            catch (Exception e) {
+                connection.rollback();
+            } finally {
+                connection.setAutoCommit(true);
+            }
         }
     }
 
