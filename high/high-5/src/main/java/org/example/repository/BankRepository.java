@@ -14,13 +14,9 @@ public class BankRepository {
     SessionFactory sessionFactory;
 
     public void updateBankNames(String newName) {
-        Session session = null;
-        Transaction transaction = null;
 
-        try {
-            session = sessionFactory.openSession();
-            transaction = session.beginTransaction();
-
+        try (Session session = sessionFactory.openSession()) {
+            Transaction transaction = session.beginTransaction();
             String hql = "FROM Bank";
             List<Bank> banks = session.createQuery(hql, Bank.class).list();
 
@@ -30,14 +26,7 @@ public class BankRepository {
             }
             transaction.commit();
         } catch (Exception e) {
-            if (transaction != null) {
-                transaction.rollback();
-            }
             e.printStackTrace();
-        } finally {
-            if (session != null) {
-                session.close();
-            }
         }
     }
 

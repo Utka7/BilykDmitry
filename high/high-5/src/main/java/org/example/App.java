@@ -27,7 +27,7 @@ public class App {
             }
 
             var bankService = new BankService(sessionFactory);
-            var name = "Сбер";
+            var name = "Тинькофф";
             bankService.updateBankNames(name);
         }
 
