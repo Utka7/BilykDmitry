@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TN.iml" filepath="$PROJECT_DIR$/TN.iml" />
       <module fileurl="file://$PROJECT_DIR$/high/high.iml" filepath="$PROJECT_DIR$/high/high.iml" />
-      <module fileurl="file://$PROJECT_DIR$/high-4.iml" filepath="$PROJECT_DIR$/high-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low.iml" filepath="$PROJECT_DIR$/low/low.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low-1/low-1.iml" filepath="$PROJECT_DIR$/low/low-1/low-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low-2/low-2.iml" filepath="$PROJECT_DIR$/low/low-2/low-2.iml" />
