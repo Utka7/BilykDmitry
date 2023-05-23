@@ -2,22 +2,18 @@ package com.example.high6.service;
 
 import com.example.high6.entity.Person;
 import com.example.high6.repository.PersonRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class PersonService {
 
     private final PersonRepository personRepository;
 
-    @Autowired
-    public PersonService(PersonRepository personRepository) {
-        this.personRepository = personRepository;
-    }
-
-    public List<Person> findAll(){
+    public List<Person> findAll() {
         return personRepository.findAll();
     }
 }

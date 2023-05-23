@@ -28,7 +28,7 @@ public class High6Application implements CommandLineRunner {
         for (var person : persons) {
             System.out.println(person.getFullName());
         }
-        var newName = "Сбер";
+        var newName = "Сбербанк";
         bankService.updateBankNames(newName);
     }
 
