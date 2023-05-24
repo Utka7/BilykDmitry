@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class LinkedListReverserTest extends TestCase {
 
     @Test
-    public void testReverseLinkedList() {
+    public void reverseLinkedList_UsualList_ReturnExpectedResult() {
         var linkedList = generateRandomLinkedList();
 
         var reverser = new LinkedListReverser();
