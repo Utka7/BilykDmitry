@@ -9,7 +9,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="primary-source" />
         <module name="middle-10" />
         <module name="servlet" />
         <module name="middle-11" />
@@ -19,7 +18,6 @@
         <module name="ear" />
         <module name="high-3" />
         <module name="high-4" />
-        <module name="ejbs" />
         <module name="logging" />
         <module name="high-5" />
         <module name="high-6" />

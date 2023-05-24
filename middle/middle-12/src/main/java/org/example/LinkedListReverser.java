@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.Random;
-
 public class LinkedListReverser {
 
     public Node reverseLinkedList(Node head) {

@@ -9,7 +9,7 @@ public class LinkedListReverserTest extends TestCase {
     public void testReverseLinkedList() {
         var linkedList = generateRandomLinkedList();
 
-        LinkedListReverser reverser = new LinkedListReverser();
+        var reverser = new LinkedListReverser();
 
         linkedList = reverser.reverseLinkedList(linkedList);
 
@@ -17,7 +17,7 @@ public class LinkedListReverserTest extends TestCase {
 
     }
 
-    private Node generateRandomLinkedList(){
+    private Node generateRandomLinkedList() {
         var length = 5;
         var value = 1;
         Node head = null;
