@@ -21,7 +21,8 @@ public class AppTest {
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'},
         };
 
-        Assert.assertTrue(matrixValidator.isValidMatrix(matrix));
+        var result = matrixValidator.isValidMatrix(matrix);
+        Assert.assertTrue(result);
     }
 
     @Test
@@ -39,7 +40,8 @@ public class AppTest {
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'},
         };
 
-        Assert.assertFalse(matrixValidator.isValidMatrix(matrix));
+        var result = matrixValidator.isValidMatrix(matrix);
+        Assert.assertFalse(result);
     }
 
 }
