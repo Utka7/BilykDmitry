@@ -2,11 +2,12 @@ package com.example.high2.dao;
 
 import com.example.high2.dto.UserDto;
 import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class UserDao {
     private final List<UserDto> users = new ArrayList<UserDto>();
 
