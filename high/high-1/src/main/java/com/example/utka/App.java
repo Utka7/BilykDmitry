@@ -7,7 +7,7 @@ import com.example.utka.xml.XmlBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class TestSpring {
+public class App {
     public static void main(String[] args) {
         var Xmlcontext = new ClassPathXmlApplicationContext(
                 "applicationContext.xml");
