@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TN.iml" filepath="$PROJECT_DIR$/TN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/middle/middle-12/ear/ear.iml" filepath="$PROJECT_DIR$/middle/middle-12/ear/ear.iml" />
       <module fileurl="file://$PROJECT_DIR$/high/high.iml" filepath="$PROJECT_DIR$/high/high.iml" />
+      <module fileurl="file://$PROJECT_DIR$/middle/middle-12/projects/logging/logging.iml" filepath="$PROJECT_DIR$/middle/middle-12/projects/logging/logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low.iml" filepath="$PROJECT_DIR$/low/low.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low-1/low-1.iml" filepath="$PROJECT_DIR$/low/low-1/low-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/low/low-2/low-2.iml" filepath="$PROJECT_DIR$/low/low-2/low-2.iml" />
@@ -18,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/middle/middle-6/middle-6.iml" filepath="$PROJECT_DIR$/middle/middle-6/middle-6.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle-7/middle-7.iml" filepath="$PROJECT_DIR$/middle/middle-7/middle-7.iml" />
       <module fileurl="file://$PROJECT_DIR$/middle/middle-8/middle-8.iml" filepath="$PROJECT_DIR$/middle/middle-8/middle-8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/middle/middle-12/servlets/servlet/servlet.iml" filepath="$PROJECT_DIR$/middle/middle-12/servlets/servlet/servlet.iml" />
     </modules>
   </component>
 </project>

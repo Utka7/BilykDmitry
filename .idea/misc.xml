@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/middle/middle-12/ear" />
     <file type="web" url="file://$PROJECT_DIR$/high/high-1" />
     <file type="web" url="file://$PROJECT_DIR$/high/high-2" />
     <file type="web" url="file://$PROJECT_DIR$/high/high-3" />
+    <file type="web" url="file://$PROJECT_DIR$/middle/middle-12/servlets/servlet" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -17,6 +19,7 @@
         <option value="$PROJECT_DIR$/high/high-5/pom.xml" />
         <option value="$PROJECT_DIR$/high/high-4/pom.xml" />
         <option value="$PROJECT_DIR$/high/high-6/pom.xml" />
+        <option value="$PROJECT_DIR$/middle/middle-12/pom.xml" />
       </list>
     </option>
   </component>
